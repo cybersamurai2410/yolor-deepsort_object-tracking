@@ -9,6 +9,13 @@ Computer vision system that utilises YOLOR, a state-of-the-art real-time object 
 - Highly Efficient: Designed for real-time performance, ensuring smooth and responsive tracking.
 - Easy to Use: Provides a straightforward interface for integrating object tracking into your applications.
 
+**Inference:**
+```
+python detect.py --source inference/images/image.jpg --cfg cfg/yolor_p6.cfg --weights yolor_p6.pt --conf 0.25 --img-size 1280 --device 0
+
+python detect_track.py --source inference/videos/video.mp4 --cfg cfg/yolor_p6.cfg --weights yolor_p6.pt --conf 0.25 --img-size 1280 --device 0
+```
+
 **Demo:**<br>
 ![yolo_demo1](https://github.com/cybersamurai2410/yolor-deepsort_object-tracking/assets/66138996/9da5e2c9-26d5-40c2-af65-91572d5fbecb)
 ![yolo_demo2](https://github.com/cybersamurai2410/yolor-deepsort_object-tracking/assets/66138996/e616eb5f-bcd9-4173-944a-544c4cef3350)
